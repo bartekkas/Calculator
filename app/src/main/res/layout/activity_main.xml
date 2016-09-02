@@ -45,31 +45,30 @@
         android:text="Dodawanie"
         android:id="@+id/addButton"
         android:layout_above="@+id/multiButton"
-        android:layout_alignParentStart="true" />
+        android:layout_toEndOf="@+id/score" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Odejmowanie"
         android:id="@+id/subtrButton"
-        android:layout_above="@+id/divButton"
-        android:layout_alignStart="@+id/divButton" />
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/score"
+        android:layout_toEndOf="@+id/addButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mnożenie"
         android:id="@+id/multiButton"
-        android:layout_marginBottom="189dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignTop="@+id/divButton"
+        android:layout_toStartOf="@+id/divButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dzielenie"
         android:id="@+id/divButton"
-        android:layout_alignBaseline="@+id/multiButton"
-        android:layout_alignBottom="@+id/multiButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/subtrButton"
+        android:layout_toEndOf="@+id/addButton" />
 </RelativeLayout>
