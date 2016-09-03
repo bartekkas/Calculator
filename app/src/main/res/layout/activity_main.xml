@@ -42,33 +42,36 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dodawanie"
+        android:text="+"
+        android:textSize="30sp"
         android:id="@+id/addButton"
-        android:layout_above="@+id/multiButton"
-        android:layout_toEndOf="@+id/score" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Odejmowanie"
-        android:id="@+id/subtrButton"
-        android:layout_marginTop="25dp"
         android:layout_below="@+id/score"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="30sp"
+        android:id="@+id/subtrButton"
+        android:layout_alignTop="@+id/addButton"
         android:layout_toEndOf="@+id/addButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mnożenie"
+        android:text="*"
+        android:textSize="30sp"
         android:id="@+id/multiButton"
-        android:layout_alignTop="@+id/divButton"
-        android:layout_toStartOf="@+id/divButton" />
+        android:layout_alignTop="@+id/subtrButton"
+        android:layout_toEndOf="@+id/subtrButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dzielenie"
+        android:text="/"
+        android:textSize="30sp"
         android:id="@+id/divButton"
-        android:layout_below="@+id/subtrButton"
-        android:layout_toEndOf="@+id/addButton" />
+        android:layout_alignTop="@+id/multiButton"
+        android:layout_toEndOf="@+id/multiButton" />
 </RelativeLayout>
