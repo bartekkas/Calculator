@@ -50,7 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             result = num1 + num2;
             score.setText(Double.toString(result));
 
-        }else
+        }
 
         if (subtrButton.getId() == v.getId()) {
             num1 = Integer.parseInt(number1.getText().toString());
@@ -58,7 +58,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             result = num1 - num2;
             score.setText(Double.toString(result));
 
-        }else
+        }
 
         if (multiButton.getId() == v.getId()) {
             num1 = Integer.parseInt(number1.getText().toString());
@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             result = num1 * num2;
             score.setText(Double.toString(result));
 
-        }else
+        }
 
         if (divButton.getId() == v.getId()) {
             num1 = Integer.parseInt(number1.getText().toString());
